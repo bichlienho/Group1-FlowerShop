@@ -4,7 +4,7 @@ The FLOWER SHOP brings you flowers from around the world such as gerberas, lotus
 =======================================
 + Supervisor		: PHẠM CÔNG DANH
 + Semester		: II	
-+ Batch No		: T5.2303.E0
++ Batch No		: T5.2308.M0
 + Group No:		: 01
 + List Of Member:
 	1. Nguyễn Lâm Chí Nguyễn (Student1501858)
