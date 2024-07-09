@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="668.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="flowershop.PdfController">
+   <children>
+      <TableView layoutX="24.0" layoutY="38.0" prefHeight="389.0" prefWidth="626.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Customer ID" />
+          <TableColumn prefWidth="75.0" text="Flower ID" />
+            <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Quantity" />
+            <TableColumn prefWidth="75.0" text="Price" />
+            <TableColumn prefWidth="112.00003051757812" text="Date" />
+            <TableColumn prefWidth="137.5999755859375" text="Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

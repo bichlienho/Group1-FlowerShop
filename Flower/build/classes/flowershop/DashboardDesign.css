@@ -1,0 +1,185 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 1, 2024, 1:33:09 PM
+    Author     : traht
+*/
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .2px .4px;
+}
+.nav_form{
+     -fx-background-color:#bf3b0f;
+}
+.nav-btn{
+     -fx-background-color:transparent;
+     -fx-cursor:hand;
+     -fx-aligment:center-left;
+     -fx-text-fill:#fff;
+     -fx-font-size:14px;
+      -fx-font-family:Arial;
+         
+}
+
+.nav-btn:hover{
+    -fx-background-color:#ec3c0b;
+         
+}
+.logout{
+    -fx-background-color:#bf3b0f;
+    -fx-background-radius:20px;
+     -fx-cursor:hand;
+}
+.logout:hover{
+    -fx-background-color:#ec3c0b;
+}
+.while-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+    
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,5),5,0,0,0);
+}
+.card{
+    -fx-background-color:linear-gradient(to right, #bf3b0f, #bf3b0f);
+     -fx-background-radius:4px;
+}
+.wbck{
+     -fx-background-color:#ece5e5;
+    -fx-background-radius:8px;
+}
+
+.textfield{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: linear-gradient(to bottom right, orange, orange);
+    -fx-border-width: .4px;
+}
+.textfield:focused{
+    -fx-background-color: #fff;
+    -fx-border-width: 1px;
+}
+
+.add-btn{
+    -fx-background-color: #3b5f75;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.add-btn:hover{
+    -fx-background-color: #3679a1;
+}
+
+.update-btn{
+    -fx-background-color: #397f57;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.update-btn:hover{
+    -fx-background-color: #43a46c;
+}
+
+.clear-btn{
+    -fx-background-color: #7a3e82;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.clear-btn:hover{
+    -fx-background-color: #933ba1;
+}
+
+.delete-btn{
+    -fx-background-color: #891f34;
+    -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.delete-btn:hover{
+    -fx-background-color: #b11b39;
+}
+
+.search{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius: 4px;
+    -fx-border-color: linear-gradient(to bottom right,#bf3b0f, #bf3b0f);
+    -fx-border-radius: 4px;
+    -fx-font-size: 13px;
+    -fx-font-family: Tahoma;
+    -fx-padding: 0px 0px 0px 28px;
+    -fx-border-width: .8px;
+}
+.search:focused{
+    -fx-background-color: #fff;
+    -fx-border-width: 1.8px;
+}
+
+.table-view{
+    -fx-border-color: linear-gradient(to bottom right, #bb1a3a, #722327);
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+    -fx-border-radius: 8px;
+    -fx-background-color: transparent;
+}
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right,#bf3b0f, #bf3b0f);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+}
+.Pay{
+     -fx-background-color: linear-gradient(to bottom right,#bf3b0f, #bf3b0f);
+    -fx-background-radius: 8px 8px 8px 8px;
+}
+.pay-btn{
+      -fx-background-color: #43a46c;
+      -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.pay-btn:hover{
+    -fx-background-color: green;
+}
+.pay-export{
+      -fx-background-color: green;
+      -fx-background-radius: 6px;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+.pay-btn:hover{
+    -fx-background-color: #1e612b;
+}
+.textcontact{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: linear-gradient(to bottom right, red, red);
+    -fx-border-width: .4px;
+}
+.textcontact:focused{
+    -fx-background-color: #fff;
+    -fx-border-width: 1px;
+}

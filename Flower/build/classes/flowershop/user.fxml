@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="617.0" prefWidth="950.0">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="947.0">
+               <children>
+                  <Label layoutX="53.0" layoutY="13.0" text="Flower Shop">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="TREE" layoutX="24.0" layoutY="26.0" size="2em" />
+                  <Line endX="847.0" endY="2.399993896484375" layoutX="101.0" layoutY="44.0" startX="-100.0" />
+                  <Button layoutX="901.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0" />
+                  <FontAwesomeIcon glyphName="CLOSE" layoutX="913.0" layoutY="31.0" />
+               </children>
+            </AnchorPane>
+            <BorderPane layoutY="46.0" prefHeight="570.0" prefWidth="947.0">
+               <left>
+                  <AnchorPane prefHeight="599.0" prefWidth="210.0" styleClass="nav_form" stylesheets="@DashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="81.0" layoutY="68.0" size="5em" />
+                        <Label alignment="CENTER" layoutX="65.0" layoutY="84.0" prefHeight="18.0" prefWidth="78.0" text="Welcome" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="100.0" layoutY="140.0" startX="-100.0" stroke="WHITE" />
+                        <Label fx:id="username" alignment="CENTER" layoutX="17.0" layoutY="103.0" prefHeight="18.0" prefWidth="174.0" text="User" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="home" layoutX="5.0" layoutY="139.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Home" />
+                        <FontAwesomeIcon fill="#ececec" glyphName="HOME" layoutX="40.0" layoutY="168.0" size="2em" />
+                        <Line endX="100.0" layoutX="104.0" layoutY="182.0" startX="-100.0" stroke="#fff8f8" />
+                        <Button fx:id="availableflower" layoutX="7.0" layoutY="182.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Product" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="MINUS" layoutX="42.0" layoutY="210.0" size="2em" />
+                        <Button fx:id="productdetail" layoutX="8.0" layoutY="222.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Product Detail" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" layoutX="30.0" layoutY="293.0" size="2em" />
+                        <Button fx:id="purchase" layoutX="8.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Invoice" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" layoutX="33.0" layoutY="250.0" size="2em" />
+                        <Line endX="100.0" layoutX="104.0" layoutY="306.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="Customer" layoutX="5.0" layoutY="305.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Customer" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="33.0" layoutY="333.0" size="2em" />
+                        <Line endX="100.0" layoutX="104.0" layoutY="353.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="supplier" layoutX="7.0" layoutY="354.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Supplier" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="TREE" layoutX="43.0" layoutY="382.0" size="2em" />
+                        <Button fx:id="inventory" layoutX="9.0" layoutY="394.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Inventory" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="LEAF" layoutX="43.0" layoutY="422.0" size="2em" />
+                        <Line endX="100.0" layoutX="108.0" layoutY="446.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="editprofile" layoutX="9.0" layoutY="447.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="198.0" styleClass="nav-btn" stylesheets="@DashboardDesign.css" text="Edit Profile" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="EDIT" layoutX="41.0" layoutY="475.0" size="2em" />
+                        <Button layoutX="5.0" layoutY="522.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="43.0" styleClass="logout" />
+                        <FontAwesomeIcon glyphName="SIGN_OUT" layoutX="18.0" layoutY="552.0" size="2em" wrappingWidth="22.285715103149414" />
+                        <Label layoutX="53.0" layoutY="535.0" prefHeight="18.0" prefWidth="70.0" text="Log Out" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="home_form" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane layoutX="11.0" layoutY="14.0" prefHeight="200.0" prefWidth="720.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <AnchorPane layoutY="8.0" prefHeight="174.0" prefWidth="235.0" styleClass="nav_form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <Label layoutX="126.0" layoutY="106.0" text="Total" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="65.0" layoutY="132.0" text="Product Avaiables" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="TREE" layoutX="14.0" layoutY="96.0" size="5em" />
+                                          <Label fx:id="home_sell" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="22.0" prefHeight="24.0" prefWidth="122.0" text="0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="243.0" layoutY="8.0" prefHeight="174.0" prefWidth="235.0" styleClass="nav_form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <Label layoutX="126.0" layoutY="106.0" text="Total" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="79.0" layoutY="132.0" prefHeight="28.0" prefWidth="134.0" text="Product Cart" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" layoutX="14.0" layoutY="96.0" size="5em" />
+                                          <Label fx:id="home_income" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="22.0" prefHeight="24.0" prefWidth="122.0" text="0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="485.0" layoutY="8.0" prefHeight="174.0" prefWidth="235.0" styleClass="nav_form" stylesheets="@DashboardDesign.css">
+                                       <children>
+                                          <Label layoutX="126.0" layoutY="106.0" text="Total" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="98.0" layoutY="132.0" text="Customer" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="96.0" size="5em" />
+                                          <Label fx:id="home_customer" alignment="CENTER_RIGHT" layoutX="98.0" layoutY="22.0" prefHeight="24.0" prefWidth="122.0" text="0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="11.0" layoutY="231.0" prefHeight="330.0" prefWidth="720.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <BarChart fx:id="home_chart" layoutX="14.0" layoutY="14.0" prefHeight="306.0" prefWidth="691.0" title="Income Chart">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="availableFlower_form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="545.0" prefWidth="710.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TextField layoutX="14.0" layoutY="14.0" prefHeight="172.0" prefWidth="150.0" styleClass="textfield" stylesheets="@DashboardDesign.css" />
+                                    <ImageView fx:id="product_imageView" fitHeight="171.0" fitWidth="151.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                                    <TableView fx:id="availableFlower_tableView" layoutX="3.0" layoutY="194.0" prefHeight="342.0" prefWidth="701.0" stylesheets="@DashboardDesign.css">
+                                      <columns>
+                                        <TableColumn fx:id="availableFlower_col_flowerid" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="availableFlower_col_flowername" prefWidth="239.99998474121094" text="Flower Name" />
+                                          <TableColumn fx:id="availableFlower_col_flowerprice" prefWidth="189.60003662109375" text="Price ($)" />
+                                          <TableColumn fx:id="availableFlower_col_flowerstatus" prefWidth="195.99993896484375" text="Status" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="product_search" layoutX="178.0" layoutY="152.0" prefHeight="26.0" prefWidth="513.0" promptText="Search" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="666.0" layoutY="169.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="productdetail_form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="546.0" prefWidth="706.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TextField fx:id="detail_search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="625.0" promptText="Search" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="612.0" layoutY="31.0" />
+                                    <TableView fx:id="detail_tableview" layoutX="14.0" layoutY="52.0" prefHeight="491.0" prefWidth="690.0">
+                                      <columns>
+                                        <TableColumn fx:id="detail_col_id" prefWidth="45.599979400634766" text="ID" />
+                                        <TableColumn fx:id="detail_col_mass" prefWidth="116.79998779296875" text="Quantity (Branch)" />
+                                          <TableColumn fx:id="detail_col_price" prefWidth="91.99998474121094" text="Price" />
+                                          <TableColumn fx:id="detail_col_color" prefWidth="108.79998779296875" text="Color" />
+                                          <TableColumn fx:id="inventorydetail" text="Supplier ID" />
+                                          <TableColumn fx:id="detail_col_des" prefWidth="556.7999938964844" text="Description" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="purchase_from" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="704.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="21.0" text="Flower ID">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="sell_flowerID" layoutX="109.0" layoutY="16.0" prefHeight="26.0" prefWidth="194.0" />
+                                    <Label layoutX="22.0" layoutY="60.0" text="Flower Name">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="sell_flowername" layoutX="109.0" layoutY="56.0" prefHeight="26.0" prefWidth="194.0" />
+                                    <Label layoutX="22.0" layoutY="108.0" text="Quantity">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="quantityinvoice" layoutX="109.0" layoutY="104.0" prefHeight="26.0" prefWidth="193.0" />
+                                    <Label layoutX="378.0" layoutY="20.0" text="Payment Type">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="sell_payment" layoutX="483.0" layoutY="16.0" prefHeight="26.0" prefWidth="194.0" />
+                                    <Label layoutX="378.0" layoutY="60.0" text="Cusstomer ID">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="sell_customerid" layoutX="483.0" layoutY="56.0" prefHeight="26.0" prefWidth="194.0" />
+                                    <TextField fx:id="sell_total" layoutX="486.0" layoutY="104.0" prefHeight="26.0" prefWidth="162.0" />
+                                    <Label layoutX="439.0" layoutY="108.0" text="Total">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="addtocartbtn" layoutX="23.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Add To Cart" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="addtocartbtn1" layoutX="176.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Reset" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="sell_paybtn" layoutX="358.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Pay" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="bill_btn" layoutX="538.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Print Bill" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="14.0" layoutY="232.0" prefHeight="326.0" prefWidth="705.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TextField layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="518.0" promptText="Search" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="508.0" layoutY="31.0" />
+                                    <TableView fx:id="sell_tableview" layoutX="8.0" layoutY="52.0" prefHeight="266.0" prefWidth="694.0">
+                                      <columns>
+                                        <TableColumn fx:id="sell_col_flowerID" prefWidth="75.0" text="Flower ID" />
+                                        <TableColumn fx:id="sell_col_flowername" prefWidth="164.7999725341797" text="Flower Name" />
+                                          <TableColumn fx:id="sell_col_flowerquantity" prefWidth="61.599884033203125" text="Quantity" />
+                                          <TableColumn fx:id="sell_col_flowerprice" prefWidth="75.20001220703125" text="Price" />
+                                          <TableColumn fx:id="sell_col_flowerpayment" prefWidth="127.19998168945312" text="Payment Type" />
+                                          <TableColumn fx:id="sell_col_flowerdate" prefWidth="99.19989013671875" text="Date" />
+                                          <TableColumn fx:id="sell_col_customerid" prefWidth="99.19989013671875" text="Customer ID" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Customer_Form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="706.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="41.0" layoutY="22.0" text="ID">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_id" layoutX="83.0" layoutY="18.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="24.0" layoutY="60.0" text="Name">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_name" layoutX="83.0" layoutY="56.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="24.0" layoutY="104.0" text="Address">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_address" layoutX="83.0" layoutY="100.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="23.0" layoutY="148.0" text="Phone">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_phone" layoutX="83.0" layoutY="144.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="391.0" layoutY="22.0" text="Email">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_email" layoutX="433.0" layoutY="18.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="375.0" layoutY="68.0" prefHeight="18.0" prefWidth="57.0" text="Password">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="customer_pass" layoutX="433.0" layoutY="64.0" prefHeight="26.0" prefWidth="210.0" styleClass="textfield" />
+                                    <Label layoutX="378.0" layoutY="103.0" prefHeight="18.0" prefWidth="57.0" text="Gender">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <RadioButton fx:id="gtnam" layoutX="451.0" layoutY="103.0" mnemonicParsing="false" text="Male" />
+                                    <RadioButton fx:id="gtnu" layoutX="538.0" layoutY="104.0" mnemonicParsing="false" text="FeMale" />
+                                    <Label layoutX="375.0" layoutY="148.0" prefHeight="18.0" prefWidth="57.0" text="Status">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="customerstatus" layoutX="433.0" layoutY="145.0" prefHeight="26.0" prefWidth="215.0" promptText="Choosse" styleClass="textfield" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="12.0" layoutY="270.0" prefHeight="290.0" prefWidth="706.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TableView fx:id="customer_tableView" layoutX="2.0" layoutY="14.0" prefHeight="260.0" prefWidth="731.0">
+                                      <columns>
+                                        <TableColumn fx:id="customer_col_ID" prefWidth="41.600040435791016" text="ID" />
+                                        <TableColumn fx:id="customer_col_NAME" prefWidth="127.20001983642578" text="Name" />
+                                          <TableColumn fx:id="customer_col_ADDRESS" prefWidth="65.5999755859375" text="Address" />
+                                          <TableColumn fx:id="customer_col_PHONE" prefWidth="112.0" text="Phone" />
+                                          <TableColumn fx:id="customer_col_EMAIL" prefWidth="115.20001220703125" text="Email" />
+                                          <TableColumn fx:id="customer_col_pass" prefWidth="100.00003051757812" text="Password" />
+                                          <TableColumn fx:id="customer_col_GENDER" prefWidth="54.39990234375" text="Gender" />
+                                          <TableColumn fx:id="customer_col_STATUS" prefWidth="116.79986572265625" text="Status" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <TextField fx:id="customer_seach" layoutX="21.0" layoutY="230.0" prefHeight="27.0" prefWidth="393.0" promptText="Search" styleClass="textfield" stylesheets="@DashboardDesign.css" />
+                              <FontAwesomeIcon glyphName="SEARCH" layoutX="394.0" layoutY="248.0" />
+                              <Button fx:id="customer_addbtn" layoutX="421.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Add" textFill="#fffafa">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="customer_updatebtn" layoutX="491.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Update" textFill="#fffafa">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="customer_resetbtn" layoutX="562.0" layoutY="230.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Reset" textFill="#fffafa">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="customer_deletebtn" layoutX="632.0" layoutY="230.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" styleClass="Pay" stylesheets="@DashboardDesign.css" text="Delete" textFill="#fffafa">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="supplier_form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="546.0" prefWidth="714.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TextField fx:id="supplier_search" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="586.0" promptText="Search" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="574.0" layoutY="31.0" />
+                                    <TableView fx:id="supplier_tavleview" layoutX="14.0" layoutY="52.0" prefHeight="482.0" prefWidth="702.0">
+                                      <columns>
+                                        <TableColumn fx:id="supplier_col_id" prefWidth="39.20001220703125" text="ID" />
+                                        <TableColumn fx:id="supplier_col_name" prefWidth="142.40003204345703" text="Name" />
+                                          <TableColumn fx:id="supplier_col_email" prefWidth="136.79995727539062" text="Email" />
+                                          <TableColumn fx:id="supplier_col_phone" prefWidth="126.39996337890625" text="Phone" />
+                                          <TableColumn fx:id="supplier_col_address" prefWidth="92.79995727539062" text="Address" />
+                                          <TableColumn fx:id="supplier_col_productid" prefWidth="69.60003662109375" text="Product ID" />
+                                          <TableColumn fx:id="supplier_col_price" prefWidth="98.4000244140625" text="Price Input" />
+                                          <TableColumn fx:id="supplier_col_quantity" prefWidth="75.2000732421875" text="Quantity" />
+                                          <TableColumn fx:id="supplier_col_status" prefWidth="99.19989013671875" text="Status" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="inventory_form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="542.0" prefWidth="706.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <TextField fx:id="search_inventory" layoutX="14.0" layoutY="24.0" prefHeight="26.0" prefWidth="529.0" promptText="Search" />
+                                    <FontAwesomeIcon glyphName="SEARCH" layoutX="521.0" layoutY="41.0" />
+                                    <TableView fx:id="inventory_tableview" layoutX="14.0" layoutY="62.0" prefHeight="469.0" prefWidth="678.0">
+                                      <columns>
+                                        <TableColumn fx:id="inventory_col_id" prefWidth="60.799991607666016" text="Flower ID" />
+                                        <TableColumn fx:id="inventory_col_product" prefWidth="111.199951171875" text="Product" />
+                                          <TableColumn fx:id="inventoru_col_quantity" prefWidth="117.60002136230469" text="Quantity" />
+                                          <TableColumn fx:id="inventory_col_dateadd" prefWidth="121.59999084472656" text="Date Add" />
+                                          <TableColumn fx:id="inventory_col_dateupdate" prefWidth="143.20001220703125" text="Date Update" />
+                                          <TableColumn fx:id="inventory_col_supplier" prefWidth="124.00006103515625" text="Supplier ID" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="edit_form" prefHeight="570.4" prefWidth="732.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="21.0" prefHeight="542.0" prefWidth="703.0" styleClass="while-bg" stylesheets="@DashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="317.0" layoutY="32.0" text="Edit Profile" textFill="#e73a00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="64.0" layoutY="76.0" text="Profile Detail" textFill="#e73a00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="196.0" layoutY="94.0" text="Email">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="edit_email" layoutX="243.0" layoutY="90.0" prefHeight="26.0" prefWidth="333.0" promptText="XXXX@gmail.com" styleClass="textfield" />
+                                    <Label layoutX="243.0" layoutY="125.0" text="Please Enter Correct Login Email !" textFill="#d91717">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="186.0" layoutY="171.0" text="Phone">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="edit_phone" layoutX="243.0" layoutY="166.0" prefHeight="26.0" prefWidth="333.0" promptText="XXXX@gmail.com" styleClass="textfield" />
+                                    <Label layoutX="181.0" layoutY="217.0" text="Address">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="edit_address" layoutX="243.0" layoutY="212.0" prefHeight="26.0" prefWidth="333.0" promptText="XXXX@gmail.com" styleClass="textfield" />
+                                    <Label layoutX="151.0" layoutY="261.0" prefHeight="18.0" prefWidth="85.0" text="Date Of Birth">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="196.0" layoutY="302.0" text="Name">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="edit_name" layoutX="243.0" layoutY="298.0" prefHeight="26.0" prefWidth="333.0" promptText="XXXX@gmail.com" styleClass="textfield" />
+                                    <Label layoutX="56.0" layoutY="343.0" text="+Contact Info" textFill="#e73a00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="178.0" layoutY="391.0" text="Phone">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="180.0" layoutY="434.0" text="Email">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="243.0" layoutY="383.0" prefHeight="26.0" prefWidth="330.0" styleClass="pay-btn" stylesheets="@loginDesign.css" text="0837267048" />
+                                    <Label alignment="CENTER" layoutX="243.0" layoutY="429.0" prefHeight="26.0" prefWidth="330.0" styleClass="pay-btn" stylesheets="@loginDesign.css" text="khaih8375@gmail.com" />
+                                    <Button layoutX="300.0" layoutY="479.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="222.0" styleClass="forget-btn" stylesheets="@loginDesign.css" text="Save Changes" />
+                                    <DatePicker fx:id="edit_date" layoutX="239.0" layoutY="257.0" prefHeight="26.0" prefWidth="337.0" styleClass="textfield" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        
+                     </children>
+                  </AnchorPane>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
